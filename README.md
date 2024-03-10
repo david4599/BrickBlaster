@@ -99,7 +99,7 @@ These following patches were made in the source files to be able to run the game
 - Build and execution are compatible from Windows 95 to Windows 11.
 
 ## Credits
-- Members of the [Eclipse](www.eclipse-game.com) demomaker team:
+- Members of the [Eclipse](https://www.eclipse-game.com) demomaker team:
   - Rez (Christophe Résigné) - Musics
   - Profil (Frédéric Box) - Graphics
   - Hacker Croll (Marc Radermacher) - Code (Brick Blaster + WinEOS)
@@ -108,7 +108,7 @@ These following patches were made in the source files to be able to run the game
 - Video game publisher [Media Pocket](https://www.abandonware-france.org/compagnies/media-pocket-1019/)
 
 ## Acknowledgments
-A big thanks to the author Marc Radermacher ([www.edromel.com](www.edromel.com)) for kindly providing the source code of this awesome game and allowing to preserve it!
+A big thanks to the author Marc Radermacher ([website](https://www.edromel.com)) for kindly providing the source code of this awesome game and allowing to preserve it!
 
 #
 david4599 - 2024
