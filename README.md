@@ -12,9 +12,10 @@ The differences were mainly related to the length allowed for some texts that ne
 
 The unmodified game sources (including WinEOS ones) as well as EOS 3.05 and 3.06 can be found in this repository: [BrickBlaster-EOS-Archive](https://github.com/david4599/BrickBlaster-EOS-Archive)
 
-Also, here are links to download the released game:
-- French: [https://archive.org/details/brick-blaster-1999](https://archive.org/details/brick-blaster-1999)
-- Spanish: [https://archive.org/details/brick-blaster-1999-spanish](https://archive.org/details/brick-blaster-1999-spanish)
+Also, here are links to download the game:
+- French commercial release: [https://archive.org/details/brick-blaster-1999](https://archive.org/details/brick-blaster-1999)
+- Spanish commercial release: [https://archive.org/details/brick-blaster-1999-spanish](https://archive.org/details/brick-blaster-1999-spanish)
+- Built from these sources: [https://github.com/david4599/BrickBlaster/releases/latest](https://github.com/david4599/BrickBlaster/releases/latest)
 
 ## Dependencies
 - Watcom 11.0B: [https://winworldpc.com/product/watcom-c-c/110b](https://winworldpc.com/product/watcom-c-c/110b)
