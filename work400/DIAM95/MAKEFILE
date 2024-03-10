@@ -1,0 +1,74 @@
+RPATH = ..\resource
+WPATH = ..\resource\watcom
+
+PRG     = wmain
+ULIB    = .\lib
+UINC    = .\include
+ULIB2   = ..\lib95
+UINC2   = ..\inc95
+
+ASMDEP  = $(UINC)\diamond.inc mixing.asm play_mod.asm sfx.asm effect.Asm
+CDEP    =
+
+CFLAGS  = -D_X86_=1 -D_WIN32 -DWIN32 -DWINVER=0x0400 /I=$(UINC) -5r -fp5 -ox -d0
+
+
+RFLAGS  = -D_X86_=1 -D_WIN32 -DWIN32 -DWINVER=0x0400 /I $(UINC)
+
+LLIBS   =  dsound.lib
+
+all : diamond.lib $(PRG).exe
+
+$(PRG).exe: $(PRG).obj $(PRG).res diamond.lib diamond.obj 
+        $(WPATH)\link -subsystem:console -out:$(PRG).exe  \
+        $(PRG).obj $(PRG).res diamond.lib \
+        $(LLIBS)
+
+diamond.lib: diamond.obj diam95.obj
+        $(WPATH)\lib /out:diamond.lib diamond.obj diam95.obj
+
+
+
+
+.rc.res:
+        $(WPATH)\rc $(RFLAGS) $*.rc
+.c.obj:
+        $(WPATH)\wcc386 $(CFLAGS) -zw $*.c
+.cpp.obj:
+        $(WPATH)\wcc386 $(CFLAGS) -zw $*.cpp
+.asm.obj:
+        $(RPATH)\tasm32 $*.asm /ml /m /p /q /i$(UINC) /DWIN32=1
+
+$(PRG).obj: $(PRG).c $(CDEP)
+
+lslmod.obj: lslmod.c $(CDEP)
+
+diamond.obj: diamond.asm $(ASMDEP)
+
+
+clean:
+# Windows 9x check
+!if $d(WINBOOTDIR)
+        del $(PRG).exe
+        del $(PRG).obj
+        del $(PRG).res
+        del diamond.obj
+        del diamond.lib
+        del diam95.obj
+        del lslmod.obj
+        del *.err
+        del *.AAA
+!else
+        del /Q $(PRG).exe
+        del /Q $(PRG).obj
+        del /Q $(PRG).res
+        del /Q diamond.obj
+        del /Q diamond.lib
+        del /Q diam95.obj
+        del /Q lslmod.obj
+        del /Q *.err
+        del /Q *.AAA
+!endif
+
+
+.PHONY: all clean

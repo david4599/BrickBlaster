@@ -1,0 +1,36 @@
+RPATH = ..\resource
+WPATH = ..\resource\watcom
+
+RFLAGS  = -D_X86_=1 -DWIN32 -DWINVER=0x0400 -I=$(RPATH)
+
+blaster.exe: blaster.res blaster.obj
+
+.asm.obj:
+        @$(RPATH)\tasm32 $*.asm $*.obj /m /q /p /dWIN32
+        @$(WPATH)\wlink N blaster.exe F blaster.obj op res blaster.res @$(RPATH)\eos.lnk system wineos
+        @del blaster.obj
+
+.rc.res:
+        $(WPATH)\rc $(RFLAGS) $*.rc
+
+
+clean:
+# Windows 9x check
+!if $d(WINBOOTDIR)
+        del blaster.exe
+        del blaster.obj
+        del blaster.res
+        del *.err
+        del *.AAA
+        deltree /Y tmp
+!else
+        del /Q blaster.exe
+        del /Q blaster.obj
+        del /Q blaster.res
+        del /Q *.err
+        del /Q *.AAA
+        rmdir /S /Q tmp
+!endif
+
+
+.PHONY: clean
