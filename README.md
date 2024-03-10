@@ -91,10 +91,10 @@ These following patches were made in the source files to be able to run the game
 
 ## Notes
 - Some required tools (installed in `RESOURCE` folder) have already been included to simplify the building steps:
-  - `diet.exe` (Version 1.45f) from EOS 3.05 or 3.06 (`Eos305\RESOURCE` or `Eos306\RESOURCE`)
+  - `diet.exe` (Version 1.45f) from EOS 3.05 or 3.06 (`Eos305\RESOURCE` or `Eos306\RESOURCE`), used to compress files
   - `make.exe` (Version 5.2) from Borland C++ 5.5 - (`Borland C++\Borland\BCC55\Bin`)
   - `tasm32.exe` (Version 5.0) from Borland Turbo Assembler (`Borland Turbo Assembler 5.0 (3.5-1.44mb)\disk02.img\CMD32.PAK` (img and pak files can be opened with 7zip))
-  - `msdos.exe` (MS-DOS Player for Win32-x64, Version ia32_x86, 7/1/2022), for running 16-bit diet.exe and llink.exe under recent Windows versions
+  - `msdos.exe` (MS-DOS Player for Win32-x64, Version ia32_x86, 7/1/2022), for running 16-bit DOS apps diet.exe and llink.exe under recent Windows versions
 
 - The sounds, musics and videos were made in file formats that are less commonly used nowadays but they can be read with these softwares:
   - IFF sounds: [Fasttracker II clone](https://16-bits.org/ft2.php). To play them at the correct tone/speed, in the bottom-left corner of the sample editor, change the key to G#4.
