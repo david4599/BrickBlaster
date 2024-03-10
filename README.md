@@ -81,6 +81,11 @@ These following patches were made in the source files to be able to run the game
   - Run in 640 x 480 screen resolution
   - Disable desktop composition
 
+- It may be possible that depending on the audio hardware or driver configuration, the game may crash due to an error with DirectSound (dsound.dll).
+  An Access Violation Exception (0xC0000005) error screen may appear or not.
+  To fix this issue, [VDMSound 2.0.4](https://sourceforge.net/projects/vdmsound/files/VDMSound%20v2/2.0.4/) can be installed. Right click on blaster.exe and select "Run with VDMS".
+  The last version 2.1.0 also works but it has to be loaded manually (see its manual) as the "Run with VDMS" option in explorer's context menu seems to not appear (?).
+
 ## Notes
 - Some required tools (installed in `RESOURCE` folder) have already been included to simplify the building steps:
   - `diet.exe` (Version 1.45f) from EOS 3.05 or 3.06 (`Eos305\RESOURCE` or `Eos306\RESOURCE`)
