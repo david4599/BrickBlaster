@@ -10,6 +10,8 @@ This game was made using a custom DOS extender called EOS (Eclipse Operating Sys
 The compiled blaster.exe from the given source code was not exactly matching the released version but the small changes have been included by comparison of disassemblies.
 The differences were mainly related to the length allowed for some texts that needed to be longer for translations which also involved fixing a few coordinates values.
 
+Several minor things were changed in makefiles and the `build.bat` script was created for an easier building process.
+
 The unmodified game sources (including WinEOS ones) as well as EOS 3.05 and 3.06 can be found in this repository: [BrickBlaster-EOS-Archive](https://github.com/david4599/BrickBlaster-EOS-Archive)
 
 Also, here are links to download the game:
