@@ -87,7 +87,10 @@ These following patches were made in the source files to be able to run the game
 - It may be possible that depending on the audio hardware or driver configuration, the game may crash due to an error with DirectSound (dsound.dll).
   An Access Violation Exception (0xC0000005) error screen may appear or not.
   To fix this issue, [VDMSound 2.0.4](https://sourceforge.net/projects/vdmsound/files/VDMSound%20v2/2.0.4/) can be installed. Right click on blaster.exe and select "Run with VDMS".
-  The last version 2.1.0 also works but it has to be loaded manually (see its manual) as the "Run with VDMS" option in explorer's context menu seems to not appear (?).
+  
+  The last version 2.1.0 also works but it has to be loaded manually (see its readme) as the "Run with VDMS" option in explorer's context menu seems to not appear (?).
+  Also, VDMSound is a 16-bit app and can only be run under 32-bit versions of Windows as the 16-bit support is removed from the 64-bit versions.
+  However, this can be fixed by installing [NTVDMx64](https://github.com/leecher1337/ntvdmx64). The compiled and ready to install files can be downloaded [here](https://mendelson.org/ntvdmx64.html).
 
 ## Notes
 - Some required tools (installed in `RESOURCE` folder) have already been included to simplify the building steps:
