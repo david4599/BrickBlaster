@@ -14,6 +14,8 @@ Several minor things were changed in makefiles and the `build.bat` script was cr
 
 The unmodified game sources (including WinEOS ones) as well as EOS 3.05 and 3.06 can be found in this repository: [BrickBlaster-EOS-Archive](https://github.com/david4599/BrickBlaster-EOS-Archive)
 
+A C/raylib port of these sources, running on Windows/macOS/Linux/Android, is available here: [KonsomeJona/brickblaster-c](https://github.com/KonsomeJona/brickblaster-c) (GPL v3).
+
 Also, here are links to download the game:
 - French commercial release: [https://archive.org/details/brick-blaster-1999](https://archive.org/details/brick-blaster-1999)
 - Spanish commercial release: [https://archive.org/details/brick-blaster-1999-spanish](https://archive.org/details/brick-blaster-1999-spanish)
